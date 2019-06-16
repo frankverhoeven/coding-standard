@@ -1,0 +1,17 @@
+{
+  "name": "frankverhoeven/coding-standard",
+  "type": "phpcodesniffer-standard",
+  "homepage": "https://frankverhoeven.me",
+  "license": "MIT",
+  "authors": [
+    {"name": "Frank Verhoeven", "email": "hi@frankverhoeven.me"}
+  ],
+  "require": {
+    "php": "^7.2",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+    "doctrine/coding-standard": "^6.0"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
