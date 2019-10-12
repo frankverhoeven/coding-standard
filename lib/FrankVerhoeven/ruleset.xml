@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd"
 >
-    <description>The Frank Verhoeven coding standard.</description>
+    <description>Frank Verhoeven coding standard</description>
 
     <rule ref="Doctrine">
         <exclude name="Generic.Formatting.SpaceAfterNot"/>
