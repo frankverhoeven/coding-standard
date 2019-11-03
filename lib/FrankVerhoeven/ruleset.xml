@@ -8,7 +8,11 @@
     <rule ref="Doctrine">
         <exclude name="Generic.Formatting.SpaceAfterNot"/>
         <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
     </rule>
+
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
 
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
