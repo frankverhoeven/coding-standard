@@ -1,5 +1,6 @@
 {
     "name": "frankverhoeven/coding-standard",
+    "description": "FV Coding Standard",
     "type": "phpcodesniffer-standard",
     "homepage": "https://frankverhoeven.me",
     "license": "MIT",
@@ -10,9 +11,10 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-        "doctrine/coding-standard": "^8.2"
+        "doctrine/coding-standard": "^8.2",
+        "squizlabs/php_codesniffer": "dev-master"
     }
     ,
     "require-dev": {
