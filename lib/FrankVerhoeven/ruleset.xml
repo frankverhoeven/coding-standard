@@ -159,6 +159,7 @@
                 <element value="
                     @internal,
                     @deprecated,
+                    @inheritDoc,
                 "/>
                 <element value="
                     @link,
