@@ -14,6 +14,14 @@
         <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed"/>
     </rule>
 
+    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
+        <properties>
+            <property name="ignoreOneLineTrailingIf" value="1"/>
+            <property name="ignoreStandaloneIfInScope" value="1"/>
+            <property name="ignoreTrailingIfWithOneInstruction" value="1"/>
+        </properties>
+    </rule>
+
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
         <properties>
             <property name="linesCountBeforeWhenFirstInCaseOrDefault" value="0"/>
