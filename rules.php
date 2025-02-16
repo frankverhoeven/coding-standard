@@ -38,6 +38,10 @@ return [
     'static_lambda' => true,
     'strict_comparison' => true,
     'strict_param' => true,
+    'trailing_comma_in_multiline' => [
+        'after_heredoc' => true,
+        'elements' => ['arguments', 'array_destructuring', 'arrays', 'match', 'parameters'],
+    ],
     'types_spaces' => [
         'space_multiple_catch' => 'single',
     ],
