@@ -1,6 +1,6 @@
 # Frank Verhoeven Coding Standard
 
-Set of PHP_CodeSniffer rules, heavily based on the Doctrine Coding Standard.
+Set of PHP CS Fixer rules.
 
 ## Install
 Install the package with composer:
@@ -9,22 +9,23 @@ composer require frankverhoeven/coding-standard --dev
 ```
 
 ## Configure
-Add the ruleset to your `phpcs.xml.dist` file:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd"
->
-    <arg name="basepath" value="."/>
-    <arg name="cache" value=".phpcs-cache"/>
-    <arg name="colors"/>
-    <arg name="extensions" value="php"/>
-    <arg name="parallel" value="80"/>
-    <arg value="sp"/>
+Include the rules in your [.php-cs-fixer.dist.php](.php-cs-fixer.dist.php) configuration:
+```php
+<?php
+declare(strict_types=1);
 
-    <file>src</file>
-    <file>tests</file>
+use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
 
-    <rule ref="FrankVerhoeven"/>
-</ruleset>
+$finder = PhpCsFixer\Finder::create()
+    ->exclude('vendor')
+    ->in(__DIR__)
+;
+
+return (new PhpCsFixer\Config())
+    ->setParallelConfig(ParallelConfigFactory::detect())
+    ->setRiskyAllowed(true)
+    ->setRules(require __DIR__ . '/vendor/frankverhoeven/coding-standard/rules.php')
+    ->setFinder($finder)
+    ->setCacheFile(__DIR__ . '.php_cs.cache')
+    ;
 ```
