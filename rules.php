@@ -22,6 +22,9 @@ return [
     'increment_style' => ['style' => 'post'],
     'list_syntax' => ['syntax' => 'short'],
     'mb_str_functions' => true,
+    'method_argument_space' => [
+        'on_multiline' => 'ensure_fully_multiline',
+    ],
     'native_function_invocation' => [
         'exclude' => [],
         'include' => ['@all'],
