@@ -34,6 +34,7 @@ return [
     'no_useless_return' => true,
     'nullable_type_declaration' => ['syntax' => 'union'],
     'nullable_type_declaration_for_default_null_value' => true,
+    'phpdoc_line_span' => ['const' => 'single', 'method' => 'single', 'property' => 'single'],
     'phpdoc_order' => true,
     'phpdoc_summary' => false,
     'phpdoc_to_comment' => ['ignored_tags' => ['var', 'phpstan-var']],
