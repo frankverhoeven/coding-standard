@@ -2,8 +2,11 @@
 declare(strict_types=1);
 
 return [
-    '@PHP80Migration:risky' => true,
-    '@PHP81Migration' => true,
+    '@PHP8x0Migration:risky' => true,
+    '@PHP8x1Migration' => true,
+    '@PHP8x2Migration:risky' => true,
+    '@PHP8x3Migration' => true,
+    '@PHP8x4Migration' => true,
     '@PSR12' => true,
     '@PSR12:risky' => true,
     '@Symfony' => true,

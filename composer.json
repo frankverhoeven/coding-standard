@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "php": "^8.3",
-        "friendsofphp/php-cs-fixer": "^3.69"
+        "php": "^8.4",
+        "friendsofphp/php-cs-fixer": "^3.89"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
