@@ -56,6 +56,7 @@ return [
     'static_lambda' => true,
     'strict_comparison' => true,
     'strict_param' => true,
+    'stringable_for_to_string' => false,
     'ternary_to_null_coalescing' => true,
     'trailing_comma_in_multiline' => [
         'after_heredoc' => true,
