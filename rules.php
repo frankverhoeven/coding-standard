@@ -2,11 +2,9 @@
 declare(strict_types=1);
 
 return [
-    '@PHP8x0Migration:risky' => true,
-    '@PHP8x1Migration' => true,
-    '@PHP8x2Migration:risky' => true,
-    '@PHP8x3Migration' => true,
-    '@PHP8x4Migration' => true,
+    '@PHP8x5Migration' => true,
+    '@PHP8x5Migration:risky' => true,
+    '@PHPUnit11x0Migration:risky' => true,
     '@PSR12' => true,
     '@PSR12:risky' => true,
     '@Symfony' => true,
@@ -46,7 +44,15 @@ return [
     'nullable_type_declaration' => ['syntax' => 'union'],
     'nullable_type_declaration_for_default_null_value' => true,
     'ordered_imports' => true,
-    'phpdoc_line_span' => ['const' => 'single', 'method' => 'single', 'property' => 'single'],
+    'phpdoc_line_span' => [
+        'case' => 'single',
+        'class' => 'single',
+        'const' => 'single',
+        'method' => 'single',
+        'other' => 'single',
+        'property' => 'single',
+        'trait_import' => 'single',
+    ],
     'phpdoc_order' => true,
     'phpdoc_summary' => false,
     'phpdoc_to_comment' => ['ignored_tags' => ['var', 'phpstan-var']],
