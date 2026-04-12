@@ -18,6 +18,7 @@ return [
     'compact_nullable_type_declaration' => true,
     'concat_space' => ['spacing' => 'one'],
     'control_structure_continuation_position' => true,
+    'declare_strict_types' => ['strategy' => 'enforce'],
     'fully_qualified_strict_types' => true,
     'global_namespace_import' => [
         'import_classes' => false,
